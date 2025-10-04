@@ -5,6 +5,17 @@
 /home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/launch/launcher.launch.py
 /home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/pepper.urdf
 /home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/rviz
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/head.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/leg.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/copi_r_sho.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/r_arm.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/copi_l_sho.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/chest.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/neck.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/lower_body.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/l_arm.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/l_hand.stl
+/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/share/ros_package/urdf/mesh/r_hand.stl
 /home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/lib/python3.12/site-packages/ros_package-0.0.0-py3.12.egg-info/zip-safe
 /home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/lib/python3.12/site-packages/ros_package-0.0.0-py3.12.egg-info/top_level.txt
 /home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/lib/python3.12/site-packages/ros_package-0.0.0-py3.12.egg-info/requires.txt

@@ -14,3 +14,14 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 urdf/pepper.urdf
+urdf/mesh/chest.stl
+urdf/mesh/copi_l_sho.stl
+urdf/mesh/copi_r_sho.stl
+urdf/mesh/head.stl
+urdf/mesh/l_arm.stl
+urdf/mesh/l_hand.stl
+urdf/mesh/leg.stl
+urdf/mesh/lower_body.stl
+urdf/mesh/neck.stl
+urdf/mesh/r_arm.stl
+urdf/mesh/r_hand.stl

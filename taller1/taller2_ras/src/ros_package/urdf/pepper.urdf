@@ -1,11 +1,32 @@
 <?xml version="1.0"?>
 <robot name="pepper">
+    <!-- CONFIGURACIONES VISUALIZACIÓN PIEZAS -->
+    <material name="default_material">
+        <color rgba="0.9 0.9 0.9 1"/>
+    </material>
 
-  <link name="base_link">
+    <!-- ESTE ES EL "OBJETO" DEL MUNDO. EL ESPACIO DONDE SE COLOCAN TODAS LAS PIEZAS -->
+    <link name="base_link"/>
+
+    <!--#####################################################-->
+    <!-- PIEZAS DEL ROBOT -->
+
+    <link name="base">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/> <!-- "xyz" son las coordenadas RELATIVAS (m) de la pieza. Y "rpy" representa la rotación de la pieza en radianes en cada eje -->
+
+            <geometry>
+                <mesh filename="package://ros_package/urdf/mesh/base.stl" scale="1 1 1"/> <!--Aqué va la ruta desde el paquete de ROS a la pieza, y sus escalas en cada eje-->
+                
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="torso">
     <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <box size="0.4 0.3 0.1"/>
+            <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
         </geometry>
         <material name="grey">
             <color rgba="0.9 0.9 0.9 1.0"/>
@@ -14,26 +35,7 @@
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <box size="0.4 0.3 0.1"/>
-        </geometry>
-    </collision>
-  </link>
-
-
-  <link name="torso">
-    <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.5" radius="0.15"/>
-        </geometry>
-        <material name="grey">
-            <color rgba="0.9 0.9 0.9 1.0"/>
-        </material>
-    </visual>
-    <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-            <cylinder length="0.5" radius="0.15"/>
+            <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
         </geometry>
     </collision>
 
@@ -50,7 +52,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="1.57 0 0"/>
         
-         <geometry>
+            <geometry>
             <cylinder length="1" radius="0.1"/>
         </geometry>
         </visual>

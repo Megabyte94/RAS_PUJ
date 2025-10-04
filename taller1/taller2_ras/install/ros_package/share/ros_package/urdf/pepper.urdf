@@ -24,7 +24,7 @@
     <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <cylinder length="0.5" radius="0.15"/>
+            <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
         </geometry>
         <material name="grey">
             <color rgba="0.9 0.9 0.9 1.0"/>
@@ -33,7 +33,7 @@
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <cylinder length="0.5" radius="0.15"/>
+            <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
         </geometry>
     </collision>
 
