@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ros-package
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: megabyte94
+Maintainer-email: megabyte94@todo.todo
+License: TODO: License declaration
+Provides-Extra: test

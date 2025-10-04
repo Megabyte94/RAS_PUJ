@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<robot name="pepper">
+
+  <link name="base_link">
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="0.4 0.3 0.1"/>
+        </geometry>
+        <material name="grey">
+            <color rgba="0.9 0.9 0.9 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="0.4 0.3 0.1"/>
+        </geometry>
+    </collision>
+  </link>
+
+
+  <link name="torso">
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <cylinder length="0.5" radius="0.15"/>
+        </geometry>
+        <material name="grey">
+            <color rgba="0.9 0.9 0.9 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <cylinder length="0.5" radius="0.15"/>
+        </geometry>
+    </collision>
+
+    </link>
+
+    <joint name="base_to_torso" type="fixed">
+        <parent link="base_link"/>
+        <child link="torso"/>
+        <origin xyz="0 0 1" rpy="0 0 0"/>
+    </joint>
+
+    <!-- BRAZO QUE ROTA -->
+    <link name="brazo">
+        <visual>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
+        
+         <geometry>
+            <cylinder length="1" radius="0.1"/>
+        </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/>
+            <geometry>
+                <cylinder length="1" radius="0.1"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="torso_to_brazo" type="revolute">
+        <parent link="torso"/>
+        <child link="brazo"/>
+        <origin xyz="0 0 0.25"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="1000" velocity="0.5" lower="0" upper="3.14"/>
+    </joint>
+
+
+
+
+</robot>
