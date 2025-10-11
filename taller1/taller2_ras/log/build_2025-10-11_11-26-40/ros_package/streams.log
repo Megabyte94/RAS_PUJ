@@ -1,0 +1,19 @@
+[3.147s] Invoking command in '/home/megabyte94/Desktop/RAS/taller1/taller2_ras/src/ros_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/megabyte94/Desktop/RAS/taller1/taller2_ras/build/ros_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_package build --build-base /home/megabyte94/Desktop/RAS/taller1/taller2_ras/build/ros_package/build install --record /home/megabyte94/Desktop/RAS/taller1/taller2_ras/build/ros_package/install.log --single-version-externally-managed install_data
+[4.007s] running egg_info
+[4.059s] writing ../../build/ros_package/ros_package.egg-info/PKG-INFO
+[4.059s] writing dependency_links to ../../build/ros_package/ros_package.egg-info/dependency_links.txt
+[4.060s] writing requirements to ../../build/ros_package/ros_package.egg-info/requires.txt
+[4.060s] writing top-level names to ../../build/ros_package/ros_package.egg-info/top_level.txt
+[4.167s] reading manifest file '../../build/ros_package/ros_package.egg-info/SOURCES.txt'
+[4.173s] writing manifest file '../../build/ros_package/ros_package.egg-info/SOURCES.txt'
+[4.173s] running build
+[4.173s] running build_py
+[4.174s] running install
+[4.190s] running install_lib
+[4.243s] running install_data
+[4.244s] running install_egg_info
+[4.307s] removing '/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/lib/python3.12/site-packages/ros_package-0.0.0-py3.12.egg-info' (and everything under it)
+[4.308s] Copying ../../build/ros_package/ros_package.egg-info to /home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/lib/python3.12/site-packages/ros_package-0.0.0-py3.12.egg-info
+[4.310s] running install_scripts
+[4.732s] writing list of installed files to '/home/megabyte94/Desktop/RAS/taller1/taller2_ras/build/ros_package/install.log'
+[4.815s] Invoked command in '/home/megabyte94/Desktop/RAS/taller1/taller2_ras/src/ros_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/megabyte94/Desktop/RAS/taller1/taller2_ras/build/ros_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/megabyte94/Desktop/RAS/taller1/taller2_ras/install/ros_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_package build --build-base /home/megabyte94/Desktop/RAS/taller1/taller2_ras/build/ros_package/build install --record /home/megabyte94/Desktop/RAS/taller1/taller2_ras/build/ros_package/install.log --single-version-externally-managed install_data

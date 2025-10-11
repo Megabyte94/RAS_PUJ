@@ -5,56 +5,78 @@
         <color rgba="0.9 0.9 0.9 1"/>
     </material>
 
-    <!-- ESTE ES EL "OBJETO" DEL MUNDO. EL ESPACIO DONDE SE COLOCAN TODAS LAS PIEZAS -->
-    <link name="base_link"/>
-
     <!--#####################################################-->
     <!-- PIEZAS DEL ROBOT -->
 
     <link name="base">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/> <!-- "xyz" son las coordenadas RELATIVAS (m) de la pieza. Y "rpy" representa la rotación de la pieza en radianes en cada eje -->
-
             <geometry>
                 <mesh filename="package://ros_package/urdf/mesh/base.stl" scale="1 1 1"/> <!--Aqué va la ruta desde el paquete de ROS a la pieza, y sus escalas en cada eje-->
-                
             </geometry>
+            <material name="default_material"/>
         </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ros_package/urdf/mesh/base.stl" scale="1 1 1"/>
+            </geometry>
+        </collision>
     </link>
 
-    <link name="torso">
-    <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-            <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
-        </geometry>
-        <material name="grey">
-            <color rgba="0.9 0.9 0.9 1.0"/>
-        </material>
-    </visual>
-    <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-            <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
-        </geometry>
-    </collision>
-
+    <link name="lower_body">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ros_package/urdf/mesh/lower_body.stl" scale="1 1 1"/>
+            </geometry>
+            <material name="default_material"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ros_package/urdf/mesh/lower_body.stl" scale="1 1 1"/>
+            </geometry>
+        </collision>
     </link>
-
-    <joint name="base_to_torso" type="fixed">
-        <parent link="base_link"/>
-        <child link="torso"/>
-        <origin xyz="0 0 1" rpy="0 0 0"/>
+    <joint name="base_to_lower_body" type="revolute">
+        <parent link="base"/>
+        <child link="lower_body"/>
+        <origin xyz="0 0 0.32" rpy="0 0 0"/>
+        <axis xyz="1 0 0"/>
+        <limit effort="1000" velocity="0.5" lower="-0.25" upper="0.25"/>
     </joint>
 
-    <!-- BRAZO QUE ROTA -->
+    <link name="torso">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.9 0.9 0.9 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="package://ros_package/urdf/mesh/chest.stl" scale="1 1 1"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="lower_body_to_torso" type="fixed">
+        <parent link="lower_body"/>
+        <child link="torso"/>
+        <origin xyz="0 0.02 0.39" rpy="0 0 0"/>
+    </joint>
+
+    <!-- BRAZO QUE ROTA
     <link name="brazo">
         <visual>
             <origin xyz="0 0 0" rpy="1.57 0 0"/>
-        
             <geometry>
-            <cylinder length="1" radius="0.1"/>
-        </geometry>
+                <cylinder length="1" radius="0.1"/>
+            </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="1.57 0 0"/>
@@ -70,6 +92,7 @@
         <axis xyz="0 0 1"/>
         <limit effort="1000" velocity="0.5" lower="0" upper="3.14"/>
     </joint>
+    -->
 
 
 
